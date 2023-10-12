@@ -1,0 +1,117 @@
+@import '../../../colors/colors.css';
+
+.projectCard {
+    background: var(--card);
+    box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
+    
+    width: 21rem;
+    height: 31rem;
+    cursor: pointer;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    transition: all 0.5s ease-in-out;
+}
+.projectCard:hover{
+    box-shadow: 0 0 3.125rem 0.25rem rgba(0,0,0,0.6);
+    
+    transform: translateY(-1rem);
+    filter: brightness(1.1);
+}
+
+.projectImg{
+    background: var(--light);
+    box-shadow: 0 0 1rem 0.125rem rgba(0,0,0,0.3);
+    
+    width: 100%;
+    height: 12rem;
+    border-radius: 0.7rem;
+}
+.projectTags{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+}
+.projectTag{
+    color: var(--secondary-background);
+    /* background-color: var(--secondary-background);
+    opacity: 15%; */
+
+    font-size: 0.75rem;
+    font-weight: 400;
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.7rem;
+}
+
+.projectDetails{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0 0.125rem;
+}
+
+.projectTitle{
+    color: var(  --text-secondary);
+
+    font-size: 1.25rem;
+    font-weight: 600;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.projectDate{
+    color: var(  --text-secondary);
+    opacity: 70%;
+
+    font-size: 0.75rem;
+    margin-left: 0.125rem;
+    font-weight: 400;
+}
+
+.projectDesc{
+    color: var(  --text-secondary);
+    opacity: 60%;
+
+    font-weight: 400;
+    margin-top: 0.5rem;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.projectMembers{
+    display: flex;
+    align-items: center;
+    padding-left: 0.7rem;
+}
+
+.memberAvatars{
+    background-color: var(--light);
+    border: 0.25 solid var(--card);
+
+    width: 2.4rem;
+    height: 2,4rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0.7rem rgba(0,0,0,0.2);
+}
+
+
+@media screen and (max-width: 768px) {
+    .projectDate{
+        font-size: 0.63rem;
+    }
+}

@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+
 import './App.css';
+import Navbar from "./components/Navbar/Navbar";
+import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
+import Education from "./components/Education/Education"
+import Contact from "./components/Contact/Contact";
+import Experience from "./components/Experience/Experience";
+import Footer from './components/Footer/Footer';
+import ProjectDetail from './components/ProjectDetail/ProjectDetail';
 
 function App() {
+  const [openModal, setOpenModal] = useState({state: false, project: null})
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <div className='body'>
+        <About />
+        <div className="specialBg">
+          <Skills />
+          <Experience />
+        </div>
+        <Projects setOpenModal={setOpenModal}/>
+        <div className="specialBg">
+          <Education />
+          <Contact />
+        </div>
+        <Footer />
+        {openModal.state &&
+          <ProjectDetail openModal={openModal} setOpenModal={setOpenModal} />
+        }
+      </div>
+      
     </div>
   );
 }

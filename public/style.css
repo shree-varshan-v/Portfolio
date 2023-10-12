@@ -1,0 +1,17 @@
+@import '../src/colors/colors.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--primary-background);
+    color: var(--light);
+    overflow: hidden;
+    overflow-y: scroll;
+}

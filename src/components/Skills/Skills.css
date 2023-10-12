@@ -1,0 +1,129 @@
+@import '../../colors/colors.css';
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.skillWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 68rem;
+    gap: 0.75rem;
+    position: relative;
+}
+
+.skillTitle {
+    color: var(--text-primary);
+
+    font-size: 2.75rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1.25rem;
+}
+
+.skillDesc {
+    color: var(  --text-secondary);
+
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 40rem;
+}
+
+.skillsContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.skill {
+    background: var(--card);
+    border: 0.1px solid var(--secondary-background);
+    box-shadow: rgba(23, 92, 230, 0.15) 0 0.25rem 1.5rem;
+    
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 30rem;
+    padding: 1.1rem 2rem;
+}
+
+.skillCategory {
+    color: var(  --text-secondary);
+
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+.skillList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.skillImg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.skillItem {
+    color: var(--text-primary);
+    border: 0.15rem solid var(--text-primary);
+    opacity: 85%;
+
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+@media screen and (max-width: 960px) {
+    .skillWrapper{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skillTitle{
+        font-size: 2rem;
+    }
+    .skillDesc{
+        font-size: 1rem;
+    }
+    .skill{
+        max-width: 25rem;
+        padding: 0.75rem 2rem;
+    }
+    .skillItem{
+        font-size: 0.85rem;
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .skill{
+        max-width: 20.5rem;
+        padding: 0.75rem 2rem;
+    }
+    .skillItem{
+        font-size: 0.85rem;
+        padding: 0.37rem 0.75rem;
+    }
+}

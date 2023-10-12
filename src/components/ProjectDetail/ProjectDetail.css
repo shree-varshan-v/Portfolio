@@ -1,0 +1,170 @@
+@import '../../colors/colors.css';
+
+.projectDetailContainer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000a7;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    overflow-y: scroll;
+    transition: all 0.5s ease;
+}
+.projectDetailWrapper{
+    color: var(--text-primary);
+    background-color: var(--card);
+
+    width: 100%;
+    max-width: 45rem;
+    height: min-content;
+    border-radius: 1rem;
+    margin: 3.125rem 1rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.projectDetailClose{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.projectDetailImage{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin-top: 1.75rem;
+    box-shadow: 0 0 0.75rem 0 rgba(0,0,0,0.3);
+}
+
+.projectDetailTitle{
+    color: var(--text-primary);
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 0.5rem 0.35rem 0 0.35rem;
+}
+.projectDetailDate{
+    color: var(  --text-secondary);
+    font-size: 1rem;
+    margin: 0.125rem 0.375rem;
+    font-weight: 400;
+}
+.projectDetailDesc{
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.5rem 0.375rem;
+}
+
+.projectDetailTags{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+}
+.projectDetailTag{
+    color: var(--secondary-background);
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.projectDetailMemberLabel{
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0.5rem 0.375rem;
+}
+.projectDetailMembers{
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+    flex-wrap: wrap;
+    margin: 0.75rem 0.375rem;
+}
+.projectDetailMember{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.projectDetailMemberImg{
+    width: 3.125rem;
+    height: 3.125rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.25rem;
+    box-shadow: 0 0 0.675rem 0 rgba(0,0,0,0.3);
+}
+.projectDetailMemberName{
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    width: 16rem;
+}
+.projectDetailButtons{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.75rem 0;
+    gap: 0.75rem;
+}
+.projectDetailButton{
+    color: var(--text-primary);
+    background-color: var(--button);
+
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.projectDetailButton:hover{
+    background-color: var(--secondary-background);
+    opacity: 75%;
+}
+
+@media screen and (max-width: 640px) {
+    .projectDetailTitle{
+        font-size: 1.2rem;
+        margin: 0.3rem 0.3rem 0 0.3rem;
+    }
+    .projectDetailDate{
+        font-size: 0.75rem;
+    }
+    .projectDetailDesc{
+        font-size: 0.75rem;
+    }
+    .projectDetailMemberLabel{
+        font-size: 1rem;
+    }
+    .projectDetailTags{
+        margin: 0.25rem 0;
+    }
+    .projectDetailTag{
+        font-size: 0.7rem;
+    }
+    .projectDetailMembers{
+        margin: 0.25rem 0.375rem;
+    }
+    .projectDetailMemberImg{
+        width: 2rem;
+        height: 2rem;
+    }
+    .projectDetailMemberName{
+        font-size: 0.75rem;
+    }
+    .projectDetailButton{
+        font-size: 0.75rem;
+    }
+}

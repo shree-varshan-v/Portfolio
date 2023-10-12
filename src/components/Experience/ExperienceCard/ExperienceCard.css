@@ -1,0 +1,147 @@
+@import '../../../colors/colors.css';
+
+.expCard{
+    border: 0.1px solid #306EE8;
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    
+    width: 42rem;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: all 0.3s ease-in-out;
+}
+.expCard:hover{
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    
+    transform: translateY(-8px);
+}
+
+.expCardTop{
+    width: 100%;
+    display: flex;
+    gap: 0.75rem;
+}
+.expCardLogo{
+    background-color: #000;
+
+    height: 3rem;
+    border-radius: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.expCardBody{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+.expCardRole{
+    color: var(--text-primary);
+    opacity: 70%;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.expCardCompany{
+    color: var(  --text-secondary);
+    opacity: 70%;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.expCardDate{
+    color: var(  --text-secondary);
+    opacity: 60%;
+
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.expCardDesc{
+    color: var(--text-primary);
+    opacity: 70%;
+
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+}
+.expCardDescBody{
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.expCard:hover .expCardDescBody{
+    overflow: visible;
+    -webkit-line-clamp: unset;
+}
+
+.expCardDescSkills {
+    width: 100%;
+    display: flex;
+    gap: 0.75rem;
+    margin-top: -0.7rem;
+}
+
+.expCardDescSkillsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.expCardDescSkill {
+    color: var(--text-primary);
+    opacity: 90%;;
+
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.expCardDocument {
+    display: none;
+    height: 4.5rem;
+    width: fit-content;
+    background-color: #000;
+    border-radius: 0.7rem;
+}
+.expCard:hover .expCardDocument{
+    display: flex;
+}
+.expCardDocument:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    .expCard{
+        padding: 0.75rem;
+        gap: 0.5rem;
+        width: 20rem;
+    }
+    .expCardLogo{
+        height: 2.5rem;
+    }
+    .expCardRole{
+        font-size: 0.9rem;
+    }
+    .expCardCompany{
+        font-size: 0.75rem;
+    }
+    .expCardDate{
+        font-size: 0.62rem;
+    }
+    .expCardDescBody{
+        font-size: 0.75rem;
+    }
+    .expCardDescSkills{
+        font-size: 0.75rem;
+    }
+
+}

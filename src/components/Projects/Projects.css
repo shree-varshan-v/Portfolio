@@ -1,0 +1,95 @@
+@import '../../colors/colors.css';
+
+#projects {
+    background: linear-gradient(343.07deg, rgba(59, 61, 206, 0.075) 5.71%, rgba(61, 59, 206, 0.041)64.83%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,100% 98%, 0 100%);
+}
+
+.projectsWrapper {
+    width: 100%;
+    max-width: 68rem;
+    padding: 0.7rem 0 7rem 0;
+    gap: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.projectsTitle{
+    color: var(--text-primary);
+
+    font-size: 2.7rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1.25rem;
+}
+.projectsDesc{
+    color: var(  --text-secondary);
+
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 45rem;
+}
+.toggleGroup{
+    color: var(--light);
+    border: 0.1rem solid var(--secondary-background);
+
+    display: flex;
+    font-size: 1rem;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    margin: 1.4rem 0;
+}
+.toggleBtn{
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.toggleBtn:hover{
+    background: var(--secondary-background);
+    opacity: 90%;
+}
+.toggleBtnActive{
+    background: var(--secondary-background);
+}
+.divider{
+    width: 0.1rem;
+    background: var(--secondary-background);
+}
+
+.projectsCardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.75rem;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 960px) {
+    .projectsWrapper{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projectsTitle{
+        margin-top: 0.75rem;
+        font-size: 2rem;
+    }
+    .toggleGroup{
+        font-size: 0.75rem;
+    }
+    .toggleBtn{
+        padding: 0.37rem 0.5rem;
+        border-radius: 0.25rem;
+    }
+}

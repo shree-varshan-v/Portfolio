@@ -1,0 +1,126 @@
+@import '../../colors/colors.css';
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.contactWrapper{
+    width: 100%;
+    max-width: 68rem;
+    padding: 0 0 5rem 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    gap: 0.75rem;
+}
+
+.contactTitle{
+    color: var(--text-primary);
+
+    font-size: 2.75rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1.25rem;
+}
+.contactDesc {
+    color: var(  --text-secondary);
+
+    max-width: 40rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.contactForm{
+    background: var(--card);
+    box-shadow:  rgba(23, 92, 230, 0.15) 0 0.25rem 1.5rem;
+
+    width: 95%;
+    max-width: 38rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 1.75rem;
+    gap: 0.75rem;
+}
+.contactFormTitle{
+    color: var(--text-primary);
+
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+.contactFormInput{
+    border: 1px solid var(  --text-secondary);
+    color: var(--text-primary);
+    background-color: transparent;
+
+    outline: none;
+    font-size: 1.2rem;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    flex: 1;
+}
+.contactFormInput:focus{
+    border: 1px solid var(--secondary-background);
+}
+.contactFormSubmit{
+    color: var(--text-primary);
+    background: -webkit-linear-gradient(225deg, rgba(4, 65, 156, 0.527) 0%, rgba(0, 102, 255, 0.705) 100%);
+
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    margin-top: 0.125rem;
+    border-radius: 0.75rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.contactFormSubmit:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 960px) {
+    #contact{
+        padding: 0;
+    }
+    .contactWrapper{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactTitle{
+        margin-top: 0.75rem;
+        font-size: 2rem;
+    }
+    .contactDesc{
+        margin-top: 0.75rem;
+        font-size: 1rem;
+    }
+    .contactForm{
+        max-width: 25rem;
+        margin-top: 1rem;
+    }
+    .contactFormTitle{
+        font-size: 1.2rem;
+    }
+    .contactFormInput{
+        font-size: 1rem;
+        padding: 0.5rem 0.75rem;
+    }
+    .contactFormSubmit{
+        padding: 0.5rem 0.75rem;
+    }
+}

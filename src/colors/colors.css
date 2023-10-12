@@ -1,0 +1,23 @@
+:root{
+    --text-primary:#e9dac6;
+    --text-secondary:#ddc2a4;
+    
+    --primary-background: #060c14;
+    --secondary-background:#0066ff;
+    
+    --card:#03080e;
+    --button: #1c293d;
+    
+    --light:#F8F0E5;
+
+    /* --bg:#1C1C27; */
+    /* --button: #1C1E27; */
+    /* --primary:#854CE6; */
+    /* --text-primary:#F2F3F4; */
+    /*   --text-secondary:#b1b2b3; */
+    /* --card:#171721; */
+    /* --primary-background: #191924; */
+    /* --button:#854CE6; */
+    /* --light:#FFFFFF; */
+    /* --black:#000000; */
+}
